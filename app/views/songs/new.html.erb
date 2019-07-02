@@ -2,19 +2,19 @@
 
 <%=form_tag songs_path do%>
     <%=label_tag :title, 'Title: '%><br>
-    <%=text_field_tag :title%><br>
+    <%=text_field_tag :'song[title]'%><br>
 
     <%=label_tag :artist_name, 'Artist Name: '%><br>
-    <%=text_field_tag :artist_name%><br>
+    <%=text_field_tag :'song[artist_name]'%><br>
 
     <%=label_tag :genre, 'Genre: '%><br>
-    <%=text_field_tag :genre%><br>
+    <%=text_field_tag :'song[genre]'%><br>
 
     <%=label_tag :released, 'Released: '%><br>
-    <%=check_box_tag :released%><br>
+    <%=check_box_tag :'song[released]'%><br>
 
     <%=label_tag :release_year, 'Release Year: '%><br>
-    <%=text_field_tag :release_year%><br>
+    <%=text_field_tag :'song[release_year]'%><br>
 
     <%=submit_tag 'Submit'%>
 <%end%>
